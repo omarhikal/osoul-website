@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.logo img {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the logo */
+}
 
 body {
   font-family: 'Arial', sans-serif;
