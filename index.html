@@ -1,178 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Osoul - Expert Financial and Accounting Services in Saudi Arabia">
-    <meta name="keywords" content="Accounting, Financial Services, Tax Preparation, Saudi Arabia">
-    <meta name="author" content="Osoul">
-    <title>Osoul Financial Services</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #004080;
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin-left: 1rem;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        .hero {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(to right, #004080, #0070c0);
-            color: white;
-        }
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .hero a {
-            background-color: white;
-            color: #004080;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            font-size: 1rem;
-            border-radius: 5px;
-        }
-        .hero a:hover {
-            background-color: #e0e0e0;
-        }
-        .services {
-            padding: 2rem;
-            text-align: center;
-        }
-        .services h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .services .service {
-            margin: 1rem 0;
-        }
-        footer {
-            background-color: #004080;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-        .contact-info {
-            margin-top: 1rem;
-        }
-        .contact {
-            padding: 2rem;
-            background-color: #f1f1f1;
-            text-align: center;
-        }
-        .contact h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .contact form input,
-        .contact form textarea,
-        .contact form button {
-            width: 100%;
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact form button {
-            background-color: #004080;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .contact form button:hover {
-            background-color: #0070c0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website - Financial Services</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Osoul Financial Services</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <h2>Expert Financial and Accounting Solutions</h2>
-        <p>Serving businesses and individuals with reliable, compliant, and efficient financial services in Saudi Arabia.</p>
-        <a href="#contact">Get Started</a>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Transforming Financial Futures</h1>
+      <p>Your trusted partner in accounting, financial planning, and advisory services.</p>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+  </section>
 
-    <section class="services" id="services">
-        <h3>Our Services</h3>
-        <div class="service">
-            <h4>Accounting</h4>
-            <p>Comprehensive accounting solutions tailored to your needs.</p>
-        </div>
-        <div class="service">
-            <h4>Tax Preparation</h4>
-            <p>Accurate and timely tax filing services compliant with Saudi regulations.</p>
-        </div>
-        <div class="service">
-            <h4>Financial Advisory</h4>
-            <p>Strategic financial planning to help you achieve your business goals.</p>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Accounting</h3>
+        <p>Comprehensive accounting services to streamline your business operations.</p>
+      </div>
+      <div class="service-card">
+        <h3>Financial Advisory</h3>
+        <p>Expert advice to help your business make informed financial decisions.</p>
+      </div>
+      <div class="service-card">
+        <h3>Tax Preparation</h3>
+        <p>Efficient tax filing for individuals and businesses, ensuring compliance.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-        <h3>Contact Us</h3>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out to start planning your financial future.</p>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Osoul Financial Services. All Rights Reserved.</p>
-        <div class="contact-info">
-            <p>Contact us: +966530610553</p>
-            <p>Connect on LinkedIn: <a href="https://www.linkedin.com/in/ahmed-hikal-" target="_blank">Ahmed Hikal</a></p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
