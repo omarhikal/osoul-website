@@ -1,144 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osoul Financial Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #004085;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0056b3;
-            padding: 0.5em;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2em;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-            justify-content: center;
-        }
-        .service {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 1em;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        .service h3 {
-            margin-top: 0;
-        }
-        .cta-button {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 0.75em 1.5em;
-            background-color: #004085;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            background-color: #004085;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Osoul - Financial Services</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Osoul Financial Services</h1>
-        <p>Your Partner in Compliance and Growth</p>
-    </header>
+
+  <!-- Header Section -->
+  <header>
     <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Financial Statement Preparation</h3>
-                <p>Accurate and compliant financial statements tailored to your business needs.</p>
-                <a href="#contact" class="cta-button">Get Started</a>
-            </div>
-            <div class="service">
-                <h3>Annual Tax Returns</h3>
-                <p>Ensure timely and accurate tax return submissions in line with Saudi regulations.</p>
-                <a href="#contact" class="cta-button">Request a Quote</a>
-            </div>
-            <div class="service">
-                <h3>VAT Filings</h3>
-                <p>Monthly and quarterly VAT filing services to keep your business on track.</p>
-                <a href="#contact" class="cta-button">Learn More</a>
-            </div>
-            <div class="service">
-                <h3>Tax Committee Reports</h3>
-                <p>Expert preparation of tax committee reports and commercial dispute documents.</p>
-                <a href="#contact" class="cta-button">Consult Now</a>
-            </div>
-            <div class="service">
-                <h3>Excise Tax Reports</h3>
-                <p>Comprehensive excise tax reporting to meet compliance standards.</p>
-                <a href="#contact" class="cta-button">Get a Free Quote</a>
-            </div>
-            <div class="service">
-                <h3>Consulting Services</h3>
-                <p>Professional advice tailored for businesses and women entrepreneurs on LinkedIn.</p>
-                <a href="#contact" class="cta-button">Schedule a Call</a>
-            </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to Osoul</h1>
+      <p>Your trusted partner for accounting and financial management services in Saudi Arabia.</p>
+      <a href="#services" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At Osoul, we specialize in providing accounting, tax services, and financial advisory. Our experts ensure compliance with local regulations while helping businesses grow and thrive.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3>Accounting</h3>
+          <p>We provide bookkeeping, financial reporting, and comprehensive accounting services for businesses of all sizes.</p>
         </div>
-    </section>
-    <section id="about">
-        <h2>About Osoul</h2>
-        <p>At Osoul, we are committed to delivering top-notch financial and consulting services that align with Saudi Arabian regulations. Our mission is to empower businesses and individuals by simplifying compliance and fostering growth.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:info@osoul.com">info@osoul.com</a></p>
-        <p>Phone: +966 123 456 789</p>
-        <p>Address: Riyadh, Saudi Arabia</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Osoul Financial Services. All rights reserved.</p>
-    </footer>
+        <div class="service-card">
+          <h3>Tax Services</h3>
+          <p>Our tax preparation and planning services help you comply with Saudi tax laws and minimize liabilities.</p>
+        </div>
+        <div class="service-card">
+          <h3>Financial Planning</h3>
+          <p>We work with you to create a financial strategy tailored to your business goals and ensure long-term success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to take the next step?</h2>
+      <p>Contact us today to get personalized financial solutions for your business.</p>
+      <a href="#contact" class="cta-button">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Osoul | Contact us at: <a href="mailto:ahikal38@gmail.com">ahikal38@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+
 </body>
 </html>
