@@ -29,29 +29,74 @@ a {
 }
 
 /* Header */
-header {
-  background-color: #002d5b; /* Dark blue color */
-  padding: 20px 0;
+
+.main-header {
+  background-color: #004aad;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main-header .logo img {
+  height: 50px;
+}
+
+.nav-menu {
+  flex-grow: 1;
   text-align: center;
 }
 
-header nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.nav-links {
+  list-style: none;
+  display: inline-flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-header nav ul li a {
-  color: #ffffff;
-  font-size: 18px;
+.nav-links a {
+  text-decoration: none;
+  color: white;
   font-weight: bold;
-  padding: 10px;
+  transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-  background-color: #004a7c; /* Hover effect */
+.nav-links a:hover {
+  color: #ffde59;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-buttons .btn {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
   border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.primary-btn {
+  background-color: #ffde59;
+  color: #004aad;
+}
+
+.primary-btn:hover {
+  background-color: #ffbb00;
 }
 
 /* Hero Section */
