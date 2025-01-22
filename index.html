@@ -89,6 +89,37 @@
         .contact-info {
             margin-top: 1rem;
         }
+        .contact {
+            padding: 2rem;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .contact h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #0070c0;
+        }
     </style>
 </head>
 <body>
@@ -126,10 +157,21 @@
         </div>
     </section>
 
+    <section class="contact" id="contact">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2025 Osoul Financial Services. All Rights Reserved.</p>
         <div class="contact-info">
             <p>Contact us: +966530610553</p>
+            <p>Connect on LinkedIn: <a href="https://www.linkedin.com/in/ahmed-hikal-" target="_blank">Ahmed Hikal</a></p>
         </div>
     </footer>
 </body>
