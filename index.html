@@ -3,122 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osoul - Expert Financial and Accounting Services in Saudi Arabia">
+    <meta name="keywords" content="Accounting, Financial Services, Tax Preparation, Saudi Arabia">
+    <meta name="author" content="Osoul">
     <title>Osoul Financial Services</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #004085;
+            background-color: #004080;
             color: white;
-            padding: 1em 0;
-            text-align: center;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         header h1 {
             margin: 0;
+            font-size: 1.5rem;
         }
-        nav {
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
             display: flex;
-            justify-content: center;
-            background-color: #0056b3;
-            padding: 0.5em;
         }
-        nav a {
+        nav ul li {
+            margin-left: 1rem;
+        }
+        nav ul li a {
             color: white;
             text-decoration: none;
-            margin: 0 1em;
-            font-weight: bold;
+            font-size: 1rem;
         }
-        nav a:hover {
+        nav ul li a:hover {
             text-decoration: underline;
         }
-        section {
-            padding: 2em;
-            max-width: 1200px;
-            margin: auto;
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, #004080, #0070c0);
+            color: white;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero a {
+            background-color: white;
+            color: #004080;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .hero a:hover {
+            background-color: #e0e0e0;
         }
         .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-            justify-content: center;
-        }
-        .service {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 1em;
+            padding: 2rem;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 300px;
         }
-        .service h3 {
-            margin-top: 0;
+        .services h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .services .service {
+            margin: 1rem 0;
         }
         footer {
-            background-color: #004085;
+            background-color: #004080;
             color: white;
             text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
+            padding: 1rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Osoul Financial Services</h1>
-        <p>Your Partner in Compliance and Growth</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Financial Statement Preparation</h3>
-                <p>Accurate and compliant financial statements tailored to your business needs.</p>
-            </div>
-            <div class="service">
-                <h3>Annual Tax Returns</h3>
-                <p>Ensure timely and accurate tax return submissions in line with Saudi regulations.</p>
-            </div>
-            <div class="service">
-                <h3>VAT Filings</h3>
-                <p>Monthly and quarterly VAT filing services to keep your business on track.</p>
-            </div>
-            <div class="service">
-                <h3>Tax Committee Reports</h3>
-                <p>Expert preparation of tax committee reports and commercial dispute documents.</p>
-            </div>
-            <div class="service">
-                <h3>Excise Tax Reports</h3>
-                <p>Comprehensive excise tax reporting to meet compliance standards.</p>
-            </div>
-            <div class="service">
-                <h3>Consulting Services</h3>
-                <p>Professional advice tailored for businesses and women entrepreneurs on LinkedIn.</p>
-            </div>
+
+    <section class="hero">
+        <h2>Expert Financial and Accounting Solutions</h2>
+        <p>Serving businesses and individuals with reliable, compliant, and efficient financial services in Saudi Arabia.</p>
+        <a href="#contact">Get Started</a>
+    </section>
+
+    <section class="services" id="services">
+        <h3>Our Services</h3>
+        <div class="service">
+            <h4>Accounting</h4>
+            <p>Comprehensive accounting solutions tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h4>Tax Preparation</h4>
+            <p>Accurate and timely tax filing services compliant with Saudi regulations.</p>
+        </div>
+        <div class="service">
+            <h4>Financial Advisory</h4>
+            <p>Strategic financial planning to help you achieve your business goals.</p>
         </div>
     </section>
-    <section id="about">
-        <h2>About Osoul</h2>
-        <p>At Osoul, we are committed to delivering top-notch financial and consulting services that align with Saudi Arabian regulations. Our mission is to empower businesses and individuals by simplifying compliance and fostering growth.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:info@osoul.com">info@osoul.com</a></p>
-        <p>Phone: +966 123 456 789</p>
-        <p>Address: Riyadh, Saudi Arabia</p>
-    </section>
+
     <footer>
-        <p>&copy; 2025 Osoul Financial Services. All rights reserved.</p>
+        <p>&copy; 2025 Osoul Financial Services. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
