@@ -18,9 +18,9 @@ h1, h2, h3 {
     color: #0055a5;
 }
 
-/* Header Section */
+/* Header Section Styles */
 .header {
-    background: #0055a5;
+    background-color: #0055a5;
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -38,33 +38,68 @@ h1, h2, h3 {
 
 .header p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .signup-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.signup-form input, .signup-form button {
+.signup-form input {
     padding: 10px;
     font-size: 1em;
     border: none;
     border-radius: 5px;
-}
-
-.signup-form input {
     flex: 1 1 200px;
     max-width: 300px;
 }
 
-.signup-form button {
-    background: #ffa500;
-    color: white;
-    cursor: pointer;
+.signup-form .checkbox {
+    display: flex;
+    align-items: center;
+    flex: 1 1 100%;
+    max-width: 600px;
+    margin-top: 10px;
 }
+
+.signup-form .checkbox input {
+    margin-right: 10px;
+}
+
+.signup-form button {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #e69500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .signup-form input {
+        flex: 1 1 100%;
+    }
+}
+
 
 /* About Section */
 .about {
