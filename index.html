@@ -1,228 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osoul - Accounting Services</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            background: #0074D9;
-            padding: 1rem 0;
-            color: #fff;
-        }
-
-        header .logo {
-            width: 150px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .nav-links li {
-            margin-left: 20px;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: #f4f4f4;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .cta-form input {
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            width: 80%;
-            max-width: 400px;
-        }
-
-        .cta-form button {
-            padding: 0.8rem;
-            background: #0074D9;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .services, .partners, .features, .faq {
-            padding: 2rem 0;
-        }
-
-        h2 {
-            margin-bottom: 1rem;
-        }
-
-        .service-items, .partner-logos, .feature-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .service-item, .feature-item {
-            width: 30%;
-            text-align: center;
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .service-item i, .feature-item i {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: #0074D9;
-        }
-
-        .partners img {
-            width: 150px;
-            margin: 10px;
-        }
-
-        .faq-item {
-            margin-bottom: 1rem;
-        }
-
-        footer {
-            background: #0074D9;
-            padding: 1rem 0;
-            color: #fff;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0.5rem 0;
-        }
-    </style>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Osoul - Accounting & Financial Consulting</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
-            <img src="logo.png" alt="Osoul Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#partners">Partners</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to Osoul</h1>
-            <p>Expert accounting and financial management services tailored to your needs.</p>
-            <form class="cta-form">
-                <input type="text" placeholder="Enter your name">
-                <input type="email" placeholder="Enter your email">
+            <div class="logo">
+                <img src="logo.png" alt="Osoul Logo">
+            </div>
+            <h1>Comprehensive Accounting & Finance Solutions</h1>
+            <p>Empowering businesses and individuals with tailored financial services that comply with Saudi regulations.</p>
+            <form class="signup-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
                 <button type="submit">Get Started</button>
             </form>
         </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Why Choose Osoul?</h2>
+            <p>Our expert team delivers innovative financial solutions for accounting, tax planning, and business growth in Saudi Arabia.</p>
+            <video controls>
+                <source src="about.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- Services Section -->
+    <section class="services">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="service-items">
+            <div class="service-list">
                 <div class="service-item">
-                    <i class="fas fa-calculator"></i>
-                    <h3>Accounting</h3>
-                    <p>Comprehensive accounting solutions for businesses of all sizes.</p>
+                    <h3>Accounting & Bookkeeping</h3>
+                    <p>Manage your finances effortlessly with our professional accounting services.</p>
                 </div>
                 <div class="service-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Financial Planning</h3>
-                    <p>Strategic planning to help achieve your financial goals.</p>
+                    <h3>Tax Compliance</h3>
+                    <p>Ensure your business complies with Saudi tax regulations.</p>
                 </div>
                 <div class="service-item">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <h3>Tax Preparation</h3>
-                    <p>Efficient and accurate tax filing services for individuals and companies.</p>
+                    <h3>Financial Advisory</h3>
+                    <p>Strategic advice to optimize your financial performance.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Business Growth Consulting</h3>
+                    <p>Identify opportunities and drive sustainable growth.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="partners" class="partners">
-        <div class="container">
-            <h2>Our Partners</h2>
-            <div class="partner-logos">
-                <img src="partner1.png" alt="Partner 1">
-                <img src="partner2.png" alt="Partner 2">
-                <img src="partner3.png" alt="Partner 3">
-            </div>
-        </div>
-    </section>
-
+    <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2>Why Choose Us</h2>
-            <div class="feature-items">
+            <h2>What Sets Us Apart</h2>
+            <div class="features-list">
                 <div class="feature-item">
-                    <i class="fas fa-award"></i>
-                    <h3>Trusted Expertise</h3>
-                    <p>Years of experience in financial management.</p>
+                    <h3>Compliance Guaranteed</h3>
+                    <p>Adhering to Saudi financial laws and regulations.</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Custom Solutions</h3>
-                    <p>Tailored services to meet your unique needs.</p>
+                    <h3>Comprehensive Reporting</h3>
+                    <p>Access detailed financial insights anytime.</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-lock"></i>
-                    <h3>Secure & Reliable</h3>
-                    <p>Ensuring confidentiality and accuracy in all dealings.</p>
+                    <h3>Personalized Support</h3>
+                    <p>Dedicated support tailored to your needs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Innovative Tools</h3>
+                    <p>Leverage advanced technology to streamline operations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="faq" class="faq">
+    <!-- FAQ Section -->
+    <section class="faq">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
-                <h3>What services does Osoul provide?</h3>
-                <p>We offer accounting, financial planning, tax preparation, and more.</p>
+                <h3>How does Osoul ensure compliance?</h3>
+                <p>Our team constantly updates its knowledge to comply with Saudi financial laws and standards.</p>
             </div>
             <div class="faq-item">
-                <h3>How can I get started?</h3>
-                <p>Contact us via the form above or email us directly for a consultation.</p>
+                <h3>What industries do you serve?</h3>
+                <p>We serve businesses of all sizes, from startups to medium-sized companies across various sectors.</p>
             </div>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Osoul. All rights reserved.</p>
-            <p>Contact us: info@osoul.com | +966-123-456-789</p>
         </div>
     </footer>
 </body>
-
 </html>
